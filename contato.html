@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Felipe Souza</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Clarity+City:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,11 +31,11 @@
                 <legend>Dados Pessoais</legend>
             <form action="/contato.html" method="post"></form>
             <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome">
+            <input type="text" id="nome" name="nome" required minlength="3" maxlength="80">
 
             <form action="/contato.html" method="post"></form>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
 
             <form action="/contato.html" method="post"></form>
             <label for="telefone">Telefone</label>
@@ -43,7 +50,7 @@
                 <legend>Endereço</legend>
                 <form action="/contato.html" method="post"></form>
                 <label for="cep">CEP</label>
-                <input type="number" id="cep" name="cep">
+                <input type="number" id="cep" name="cep" required pattern="[0-9]{8}" placeholder="Somente Números" title="O CEP deve conter exatamente 8 números.">
 
                 <form action="/contato.html" method="post"></form>
                 <label for="rua">Rua</label>
@@ -51,7 +58,7 @@
 
                 <form action="/contato.html" method="post"></form>
                 <label for="numero">Número</label>
-                <input type="number" id="numero" name="numero">
+                <input type="number" id="numero" name="numero" min="1" max="99999">
 
                 <form action="/contato.html" method="post"></form>
                 <label for="cidade">Cidade</label>
@@ -72,7 +79,7 @@
                 <legend>Interesse</legend>
                 <form action="/contato.html" method="post"></form>
                 <label for="area_interesse">Área de Interesse</label>
-                <select name="area_interesse">
+                <select name="area_interesse" required>
                     <option>Front-End</option>
                     <option>Back-End</option>
                     <option>Banco de Dados</option>

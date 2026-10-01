@@ -1,0 +1,81 @@
+*
+{
+    box-sizing: border-box;
+    }
+    body { 
+    margin: 0;
+    }
+    /*PALETA DE CORES DO PROJETO (COOLORS.CO)
+    Fundo: #F8FAFC
+    Texto: #0F172A
+    Destaque: #4F46E5
+    Detalhe: #E2E8F0*/
+
+    body{
+        font-family: 'Arimo', sans-serif;
+        font-size: 1rem;
+        line-height: 1.6;
+        background-color: #F8FAFC;
+        color: #0F172A;
+        padding: 24px;
+      }
+    
+    button, .btn {
+        background-color: #4F46E5;
+        color: #FFFFFF;
+    }
+
+    .card, hr {
+        border: 1px solid #E2E8F0;
+      }
+
+      h1{
+        font-family: 'Clarity City', sans-serif;
+        font-size: 2.5;
+      }
+
+      h2{
+        font-family: 'Clarity City', sans-serif;
+        font-size: 1.75;
+      }
+
+      h3{
+        font-family: 'Clarity City', sans-serif;
+        font-size: 1.25;
+      }
+
+      header, footer{
+        background-color: #0F172A;
+        color: #FFFFFF;
+        padding: 24px;
+      }
+
+      main{
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      nav ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 12px;
+      }
+
+      nav a{
+        text-decoration: none;
+        color: #4F46E5;
+        font-weight: 500;
+        display: inline-block;
+      }
+
+      nav a :hover{
+        background-color: #E2E8F0;
+        padding: 8px 12px;
+        border-radius: 6px;
+      }
+
+
+      
